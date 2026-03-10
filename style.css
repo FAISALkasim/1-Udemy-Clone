@@ -173,8 +173,9 @@ body{
 
 .course__card{
 
-    width: 300px;
-    padding: 5px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .course__card img{
@@ -254,4 +255,44 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width:800px) {
+    
+
+body{
+
+    font-size: small;
+}
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    .course__card{
+
+        flex-basis: 40%;
+    }
+
+    .catagories{
+
+        display: none;
+    }
+
+    .navbar__s2,.navbar__s3{
+
+        display: none;
+    }
+
+    .menubar{
+
+        display: block;
+    }
+
+    .sale-image__popup{
+
+        display: none;
+    }
+    
 }
